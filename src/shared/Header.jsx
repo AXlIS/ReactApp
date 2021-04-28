@@ -5,7 +5,6 @@ function HeaderComponent() {
     return (
         <header>
             <h1>Reddit for our own </h1>
-            <p>sock my cock</p>
         </header>
     )
 }
