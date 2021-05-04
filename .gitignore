@@ -1,3 +1,7 @@
 .idea
 node_modules
-/src/example.ts
+/examples/examplei.ts
+./src/classExample.tsx
+examples/examplei.ts
+/examples/
+examples/class.tsx
