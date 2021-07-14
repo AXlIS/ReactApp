@@ -5,3 +5,4 @@ node_modules
 examples/examplei.ts
 /examples/
 examples/class.tsx
+src/shared/exemple/HOMEWORK.ts
