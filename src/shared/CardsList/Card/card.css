@@ -3,8 +3,49 @@
     border-radius: 7px;
     display: flex;
     flex-flow: row wrap;
+    padding: 22px 20px;
+    position: relative;
 }
 
 .card > * {
     flex: 1 1 100%
+}
+
+.shareButton {
+    width: 20px;
+    height: 20px;
+}
+
+.saveButton {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 15px;
+}
+
+@media all and (min-width: 1024px) {
+    .card {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+
+    }
+
+    .card > * {
+        flex: none;
+    }
+}
+
+@media all and (min-width: 1540px) {
+    .card {
+        padding: 10px 60px;
+    }
+
+    .card:hover, .card:focus-within {
+        outline: 1px solid var(--greyD9);
+    }
+
+    .card:hover h2 a, card:focus-within h2 a {
+        color: var(--orange);
+    }
 }
