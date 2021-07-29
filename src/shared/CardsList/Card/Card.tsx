@@ -1,17 +1,18 @@
-import React from 'react'
+import React, {ReactNode} from 'react'
 import styles from './card.css'
 import {TextContent} from "./TextContent";
 import {Preview} from "./Preview";
 import {Menu} from "./Menu";
 import {Controls} from "./Controls";
 
-export function Card() {
+interface ICardProps {
+    children?: ReactNode
+}
+
+export function Card({children}: ICardProps) {
     return (
         <li className={styles.card}>
-            <TextContent/>
-            <Preview/>
-            <Menu/>
-            <Controls/>
+            {children}
         </li>
     )
 }
