@@ -6,15 +6,15 @@ import {Preview} from "./Card/Preview";
 import {Menu} from "./Card/Menu";
 import {Controls} from "./Card/Controls";
 
-export function CardsList(){
-    return (
-        <ul className={styles.cardsList}>
-            <Card>
-                <TextContent/>
-                <Preview/>
-                <Menu/>
-                <Controls/>
-            </Card>
-        </ul>
-    )
+export function CardsList() {
+  return (
+      <ul className={styles.cardsList}>
+        <Card>
+          <TextContent/>
+          <Preview/>
+          <Menu/>
+          <Controls/>
+        </Card>
+      </ul>
+  )
 }

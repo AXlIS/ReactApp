@@ -64,7 +64,7 @@ export class Lifecycle extends React.Component<ILifecycleProps, ILifecycleState>
         this.setState({stateField: 1})
     }
 
-    public componentDidMount() { //запускается после того как эдемент встроен в DOM дерево
+    public componentDidMount() { //запускается после того как элемент встроен в DOM дерево
         document.addEventListener('resize', () => {
         })
         setTimeout(() => {
