@@ -5,10 +5,8 @@ import './main.global.css'
 import {Header} from "./shared/Header/header"
 import {Content} from "./shared/Content/Content"
 import {CardsList} from './shared/CardsList/CardsList'
-import {assignId, generateId, generateRandomString} from "./utils/react/generateRandomIndex";
-import {GenericList} from "./shared/exemple/GeneticList";
-import {merge} from "./utils/js/merge";
-import {Dropdown} from "./shared/Dropdown";
+import {EColor, Text} from "./shared/Text";
+import {generateId} from "./utils/react/generateRandomIndex";
 
 
 const LIST = [
@@ -45,7 +43,9 @@ function AppComponent() {
 
           {/*<button onClick={handleAdd}>Add Element</button>*/}
           {/*<GenericList list={list.map(merge({onClick: handleItemClick}))}/>*/}
-
+          <Text size={20} mobileSize={28} color={EColor.green}>
+            Типо текст
+          </Text>
         </Content>
       </Layout>
   );

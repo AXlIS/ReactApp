@@ -14,7 +14,7 @@ export function TextContent() {
                     className={styles.publishedLabel}>опубликовано </span>4 часа назад</span>
             </div>
             <h2 className={styles.title}>
-                <a href="#" className={styles.postLink}>
+                <a href="#" className={styles.postLink }>
                     Следует отметить, что новая модель организационной деятельности...
                 </a>
             </h2>
