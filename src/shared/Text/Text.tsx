@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './text.css';
 import classNames from 'classnames'
 
-type TSizes = 28 | 20 | 16 | 14 | 12 | 10;
+export type TSizes = 28 | 20 | 16 | 14 | 12 | 10;
 
 export enum EColor {
   black = 'black',
@@ -19,7 +19,7 @@ export enum EColor {
 }
 
 interface ITextProps {
-  As?: 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'div';
+  As?: 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'div' ;
   children?: React.ReactNode;
   size: TSizes;
   mobileSize?: TSizes;

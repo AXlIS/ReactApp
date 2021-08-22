@@ -1,7 +1,8 @@
 import React from 'react'
+import {IIconProps} from "../Icon";
 
 
-export function MenuIcon() {
+export function MenuIcon({width = 16, height = 16}: IIconProps) {
   return (
       <svg width="5" height="20" viewBox="0 0 5 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="2.5" cy="2.5" r="2.5" fill="#D9D9D9"/>
