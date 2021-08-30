@@ -19,7 +19,7 @@ export enum EColor {
 }
 
 interface ITextProps {
-  As?: 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'div' ;
+  As?: 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'div';
   children?: React.ReactNode;
   size: TSizes;
   mobileSize?: TSizes;
@@ -46,8 +46,6 @@ export function Text(props: ITextProps) {
       {[styles[`d${desktopSize}`]]: desktopSize},
       styles[color]
   );
-
-  console.log(classes)
 
   return (
       <As className={classes}>
