@@ -6,8 +6,6 @@ import {Header} from "./shared/Header/header"
 import {Content} from "./shared/Content/Content"
 import {CardsList} from './shared/CardsList/CardsList'
 import {generateId} from "./utils/react/generateRandomIndex";
-import {EIcons, Icon} from "./shared/Icon";
-import {AddIcon} from "./shared/icons";
 
 
 const LIST = [
