@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {hot} from "react-hot-loader/root";
 import {Layout} from "./shared/Layout/layout";
 import './main.global.css'
@@ -6,6 +6,7 @@ import {Header} from "./shared/Header/header"
 import {Content} from "./shared/Content/Content"
 import {CardsList} from './shared/CardsList/CardsList'
 import {generateId} from "./utils/react/generateRandomIndex";
+import {useToken} from "./hooks/useToken";
 
 
 const LIST = [
@@ -15,33 +16,13 @@ const LIST = [
 ].map(generateId)
 
 function AppComponent() {
-  // const [list,  setList] = React.useState(LIST)
-  //
-  // const handleItemClick = (id: string | undefined) => {
-  //   setList(list.filter((item) => item.id != id));
-  // }
-  //
-  // const handleAdd = () => {
-  //   setList(list.concat(generateId({text: generateRandomString()})))
-  // }
+  const [token] = useToken()
 
   return (
       <Layout>
-        <Header/>
+        <Header token={token}/>
         <Content>
           <CardsList/>
-          {/*<div style={{padding: 20}}>*/}
-          {/*  <br/>*/}
-          {/*  <Dropdown*/}
-          {/*      onClose={() => console.log('closed')}*/}
-          {/*      onOpen={() => console.log('opened')}*/}
-          {/*      isOpen={false} button={<button>Test</button>}>*/}
-          {/*    <CardsList/>*/}
-          {/*  </Dropdown>*/}
-          {/*</div>*/}
-
-          {/*<button onClick={handleAdd}>Add Element</button>*/}
-          {/*<GenericList list={list.map(merge({onClick: handleItemClick}))}/>*/}
         </Content>
       </Layout>
   );
