@@ -5,26 +5,37 @@ import './main.global.css'
 import {Header} from "./shared/Header/header"
 import {Content} from "./shared/Content/Content"
 import {CardsList} from './shared/CardsList/CardsList'
-import {generateId} from "./utils/react/generateRandomIndex";
 import {useToken} from "./hooks/useToken";
+import {tokenContext} from "./shared/context/tokenContext";
+import {UserContextProvider} from "./shared/context/userContext";
+import {PostsContextProvider} from "./shared/context/postsContext";
 
 
-const LIST = [
-  {text: 'some value'},
-  {text: 'second some value'},
-  {text: 'this some value too'}
-].map(generateId)
+// const LIST = [
+//   {text: 'some value'},
+//   {text: 'second some value'},
+//   {text: 'this some value too'}
+// ].map(generateId)
 
 function AppComponent() {
   const [token] = useToken()
 
   return (
-      <Layout>
-        <Header token={token}/>
-        <Content>
-          <CardsList/>
-        </Content>
-      </Layout>
+    <tokenContext.Provider value={token}>
+      <UserContextProvider>
+
+        <PostsContextProvider>
+          <Layout>
+            <Header/>
+            <Content>
+              <CardsList/>
+            </Content>
+          </Layout>
+        </PostsContextProvider>
+
+      </UserContextProvider>
+    </tokenContext.Provider>
+
   );
 }
 

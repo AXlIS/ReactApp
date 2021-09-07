@@ -6,13 +6,13 @@ import {Menu} from "./Menu";
 import {Controls} from "./Controls";
 
 interface ICardProps {
-    children?: ReactNode
+  children?: ReactNode
 }
 
 export function Card({children}: ICardProps) {
-    return (
-        <li className={styles.card}>
-            {children}
-        </li>
-    )
+  return (
+    <li className={styles.card}>
+      {children}
+    </li>
+  )
 }

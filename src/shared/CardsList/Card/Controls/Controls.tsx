@@ -5,11 +5,11 @@ import {CommentsButton} from "./CommentsButton";
 import {Actions} from "./Actions";
 
 export function Controls() {
-    return (
-        <div className={styles.controls}>
-            <KarmaCounter/>
-            <CommentsButton/>
-            <Actions/>
-        </div>
-    );
+  return (
+    <div className={styles.controls}>
+      <KarmaCounter/>
+      <CommentsButton/>
+      <Actions/>
+    </div>
+  );
 }
