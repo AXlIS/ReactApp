@@ -13,10 +13,10 @@ export function CardsList() {
   const {Provider} = karmaContext
 
   return (
-    <ul className={styles.cardsList} onClick={() => console.log(children)}>
+    <ul className={styles.cardsList}>
       {children?.map((item) => (
         <Card key={item.data.id}>
-          <TextContent text={item.data.title} author={item.data.author} url={item.data.url}/>
+          <TextContent text={item.data.title} author={item.data.author}/>
           <Preview url={item.data.thumbnail}/>
           <Menu/>
           <Provider value={item.data.score}>

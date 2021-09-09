@@ -1,0 +1,35 @@
+.form {
+
+}
+
+.panel {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.input {
+    width: 100%;
+    height: 90px;
+    border: 1px solid var(--greyD9);
+    box-sizing: border-box;
+    border-radius: 3px 3px 0 0;
+    resize: none;
+    outline: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--grey99);
+    padding: 5px 10px;
+}
+
+.button {
+    width: 30%;
+    height: 40px;
+    color: var(--white);
+    background-color: var(--orange);
+    margin: -3px 0 0 0;
+    border-radius: 0 0 3px 0;
+}
